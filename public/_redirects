@@ -1,1 +1,11 @@
+# Handle client-side routing
 /*    /index.html   200
+
+# Specific route redirects for better SEO
+/team    /index.html   200
+/about   /index.html   200
+/events  /index.html   200
+/Events  /index.html   200
+/scheduler /index.html 200
+/works   /index.html   200
+/Projects /index.html  200

@@ -5,6 +5,7 @@ import Projects from "../pages/Projects";
 import Team from "../pages/Team";
 import Works from "../pages/Works";
 import Scheduler from "../pages/Scheduler";
+import NotFound from "../pages/NotFound";
 
 export const routes = [
     {
@@ -38,5 +39,9 @@ export const routes = [
     {
         path: '/Events',
         element: <Events />,
+    },
+    {
+        path: '*',
+        element: <NotFound />, // Show 404 page for undefined routes
     },
 ];

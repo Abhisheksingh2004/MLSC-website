@@ -19,5 +19,26 @@ services:
         value: public, max-age=31536000, immutable
     routes:
       - type: rewrite
+        source: /team
+        destination: /index.html
+      - type: rewrite
+        source: /about
+        destination: /index.html
+      - type: rewrite
+        source: /events
+        destination: /index.html
+      - type: rewrite
+        source: /Events
+        destination: /index.html
+      - type: rewrite
+        source: /scheduler
+        destination: /index.html
+      - type: rewrite
+        source: /works
+        destination: /index.html
+      - type: rewrite
+        source: /Projects
+        destination: /index.html
+      - type: rewrite
         source: /*
         destination: /index.html
