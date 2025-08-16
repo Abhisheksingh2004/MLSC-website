@@ -3,6 +3,7 @@ import Footer from "../layouts/Footer"
 import globe from 'vanta/src/vanta.globe'
 import styles from './Home.module.css'
 import About from './About'
+import SchedulerSection from '../components/SchedulerSection'
 // import Gallery from '../layouts/Gallery'
 import CounterUp from '../components/CounterUp'
 // import { SliderData } from '../utils/data'
@@ -35,6 +36,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <SchedulerSection />
       <About />
       {/* <Gallery  slides={SliderData}/> */}
       <CounterUp />

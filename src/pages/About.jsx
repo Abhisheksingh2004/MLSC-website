@@ -1,6 +1,7 @@
 import aboutImg from '../assets/about.webp';
 import styles from './About.module.css';
 
+
 const About = () => {
   return (
     <section className={`section | ${styles.about_section}`}>

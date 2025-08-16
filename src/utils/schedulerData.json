@@ -1,0 +1,24 @@
+{
+  "event": {
+    "title": "Upcoming Event",
+    "subtitle": "Don't miss our next exciting event!",
+    "targetDate": "2025-08-21T15:50:00",
+    "eventName": "Next MLSC Workshop",
+    "eventDescription": "Join us for coding, learning, and networking!",
+    "eventDetails": {
+      "location": "VCET Campus",
+      "type": "Workshop",
+      "duration": "4 hours"
+    },
+    "media": {
+    "type": "image",
+    "src": "/src/assets/reactjsworkshop.jpeg",
+    "alt": "React.js Workshop Event",
+    "caption": "Join us for an amazing React.js learning experience!"
+  },
+    "expiredMessage": {
+      "title": "🎉 Event is Live! 🎉",
+      "description": "Join us now!"
+    }
+  }
+}

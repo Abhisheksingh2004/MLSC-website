@@ -8,16 +8,18 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0c0751 40%, #1a237e 100%);
+    /* Remove background override to let neural glow show */
     color: #ffffff;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .projects_section {
     padding: 1em;
-    background-color: rgb(12, 7, 81);
+    /* Remove background-color to let neural glow show through */
+    background-color: transparent;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    /* Remove box-shadow or make it more subtle */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .title {
@@ -89,8 +91,15 @@ body {
 }
 
 @keyframes drop-in {
-    from { opacity: 0; transform: translateY(-100px); }
-    to { opacity: 1; transform: translate(0px); }
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 @media (max-width: 768px) {

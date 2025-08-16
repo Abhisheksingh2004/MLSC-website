@@ -11,8 +11,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
-    background: rgb(12, 7, 81);
-    height: 100vh;
+    background: #000000;
+    /* Dark background to complement neural glow */
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 a {
@@ -32,8 +35,23 @@ img {
     color: rgb(2, 162, 255);
 }
 
+/* Ensure content appears above background */
+#root {
+    position: relative;
+    z-index: 1;
+}
+
+/* Main app container */
+.app-container {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
 .section {
     padding: 0 3em;
+    position: relative;
+    z-index: 2;
 }
 
 .title {

@@ -293,3 +293,27 @@
         font-size: 13px;
     }
 }
+.filter_buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter_buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background:linear-gradient(135deg,rgb(5, 42, 145),rgb(50, 50, 54));
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter_buttons button:hover {
+  background-color: #666;
+}
+
+.active_filter {
+  background-color: #1e90ff;
+  color: white;
+}

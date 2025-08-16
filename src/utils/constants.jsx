@@ -4,31 +4,39 @@ import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import Team from "../pages/Team";
 import Works from "../pages/Works";
+import Scheduler from "../pages/Scheduler";
 
 export const routes = [
     {
         path: '/',
-        element: <Home/>,
+        element: <Home />,
     },
     {
         path: '/about',
-        element: <About/>,
+        element: <About />,
     },
     {
         path: '/team',
-        element: <Team/>,
+        element: <Team />,
     },
     {
         path: '/events',
-        element: <Events/>,
+        element: <Events />,
     },
-    
+    {
+        path: '/scheduler',
+        element: <Scheduler />,
+    },
     {
         path: '/works',
-        element: <Works/>,
+        element: <Works />,
     },
     {
         path: '/Projects',
-        element: <Projects/>,
+        element: <Projects />,
+    },
+    {
+        path: '/Events',
+        element: <Events />,
     },
 ];
