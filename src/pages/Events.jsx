@@ -104,7 +104,7 @@ const Events = ({ count }) => {
 
   return (
     <>
-      <section className={`section | ${styles.event_section}`}>
+      <section className={`section | ${styles.event_section} `}>
         <h1 className='title'>Dive into the Tech Universe with us</h1>
 
         {/* Filter buttons */}

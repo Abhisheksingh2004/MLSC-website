@@ -161,7 +161,7 @@ const Team = () => {
             <div className="lg:hidden block sticky top-[150px] sm:text-base text-2xl"></div>
           </div>
           <div className="grid col-span-12 mt-16 text-white xl:col-span-8 lg:col-span-8 md:col-span-9 sm:mt-0 z-50">
-          <h2 className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
+          <h2 id='LEADS' className="font-extrabold text-yellow m-auto uppercase lg:text-3xl sm:text-2xl text-3xl">
                   LEADS
                 </h2>
             <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-3">
