@@ -1,9 +1,16 @@
 import styles from './Projects.module.css';
 import projectData from "../utils/projectData.json";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const renderTopTile = (project) => (
   <div className={`${styles.projectTile} ${styles.topdetails}`} key={project.name}>
-    <img src={project.imgSrc} alt={project.name} className={styles.projectImg} />
+    <LazyLoadImage
+  src={project.imgSrc}
+  alt={project.name}
+  className={styles.projectImg}
+  effect="blur"
+/>
     <p className={styles.projectName}>{project.name}</p>
     <p className={styles.projectCategory}>{project.category}</p>
   </div>

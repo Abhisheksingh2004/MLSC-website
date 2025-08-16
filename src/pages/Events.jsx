@@ -5,6 +5,9 @@ import azureEventImg from "../assets/azurechallenge.jpeg";
 import SqlWorkshop from "../assets/SqlWorkshop.jpg";
 import scogoTuring from "../assets/Scogo_Turing.jpg";
 import styles from './Events.module.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const Events = ({ count }) => {
   const [isModalOpen, setModalIsOpen] = useState(false);
@@ -124,7 +127,13 @@ const Events = ({ count }) => {
             .slice(0, count ? count : eventsData.length)
             .map((event, index) => (
               <div className={`flex_center | ${styles.event_content}`} key={index}>
-                <img className={styles.eventImg} src={event.imgSrc} alt={event.title} />
+                <LazyLoadImage
+                  className={styles.eventImg}
+                  src={event.imgSrc}
+                  alt={event.title}
+                  wrapperClassName="w-full h-full"
+                  effect="blur" />
+
                 <div className={styles.event_right_content}>
                   <h2>{event.title}</h2>
                   <p>{event.description}</p>
